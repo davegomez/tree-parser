@@ -1,6 +1,4 @@
-# tree-parser
-
-[![Circle CI](https://circleci.com/gh/davegomez/tree-parser/tree/master.svg?style=svg)](https://circleci.com/gh/davegomez/tree-parser/tree/master)
+# tree-parser [![Circle CI](https://circleci.com/gh/davegomez/tree-parser/tree/master.svg?style=svg)](https://circleci.com/gh/davegomez/tree-parser/tree/master)
 
 ## Usage
     var parser = require('tree-parser');
