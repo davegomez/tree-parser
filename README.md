@@ -1,5 +1,7 @@
 # tree-parser
 
+[![Circle CI](https://circleci.com/gh/davegomez/tree-parser/tree/master.svg?style=svg)](https://circleci.com/gh/davegomez/tree-parser/tree/master)
+
 ## Usage
     var parser = require('tree-parser');
 
@@ -41,4 +43,4 @@ For an input like `parser('directory-path', '_data');` the output will be someth
       }
     }
 
-Note how the `_data.json` file was included in the tree main level with its content exposed as an object.
+Note how the `_data.json` file was included in its directory tree level with the file content exposed as an object.
