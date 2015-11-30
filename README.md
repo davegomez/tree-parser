@@ -7,12 +7,12 @@
 
     var tree = parser('directory-path', [, files]);
 
-tree-parser accepts two arguments:
+**tree-parser** accepts two arguments:
 
-1. A string representing the absolute or relative path for the target directory.
-2. An optional list of comma separated *file-names* to be excluded from the `_content` list of files and included as an object in the current tree level.
+- `directory-path: string` - A string representing the absolute or relative path for the target directory.
+- `[, files]: Array<string>` - An optional list of comma separated *file-names* to be excluded from the `_content` list of files and included as an object in the current tree level.
 
-**Note:** the files to be excluded can only be JSON files.
+**Note:** the files to be excluded can only be **JSON** files.
 
 ## Output
 
