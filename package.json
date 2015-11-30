@@ -2,7 +2,7 @@
   "name": "tree-parser",
   "version": "0.1.0",
   "description": "A small directory tree parser",
-  "main": "bin/index.js",
+  "main": "build/index.js",
   "scripts": {
     "compile": "babel src --out-dir build",
     "lint": "eslint src/**/*.js",
@@ -21,7 +21,11 @@
     "directory",
     "list"
   ],
-  "author": "David Gómez",
+  "author": {
+    "name": "David Gómez",
+    "email": "dg.dave@gmail.com",
+    "url": "https://github.com/davegomez"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/davegomez/tree-parser/issues"
