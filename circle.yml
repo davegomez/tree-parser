@@ -4,11 +4,11 @@ machine:
 
 dependencies:
   override:
-    - npm install -g npm@3.5.0 babel-tape-runner
-    - npm install
+    - npm -g upgrade
+    - npm -g install babel-cli
 
 test:
   override:
-    - npm run lint
-    - npm test
-    - npm run compile
+    - npm run-script lint
+    - npm run-script test
+    - npm run-script compile

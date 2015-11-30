@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - "4.2.1"
+  - "5.1.0"
+  - "iojs"
+before_install:
+  - npm -g upgrade
+  - npm -g install babel-cli
+script:
+  - npm run-script lint
+  - npm run-script test
+  - npm run-script compile
+notifications:
+  email:
+    - dg.dave@gmail.com
