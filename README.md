@@ -1,6 +1,6 @@
 # tree-parser
 
-[![Circle CI](https://circleci.com/gh/davegomez/tree-parser/tree/master.svg?style=svg)](https://circleci.com/gh/davegomez/tree-parser/tree/master) [![Build Status](https://travis-ci.org/davegomez/tree-parser.svg?branch=master)](https://travis-ci.org/davegomez/tree-parser) [![npm version](https://badge.fury.io/js/tree-parser.svg)](https://badge.fury.io/js/tree-parser)
+[![Circle CI](https://circleci.com/gh/davegomez/tree-parser/tree/master.svg?style=shield)](https://circleci.com/gh/davegomez/tree-parser/tree/master) [![Build Status](https://travis-ci.org/davegomez/tree-parser.svg?branch=master)](https://travis-ci.org/davegomez/tree-parser) [![npm version](https://badge.fury.io/js/tree-parser.svg)](https://badge.fury.io/js/tree-parser)
 
 ## Usage
     var parser = require('tree-parser');
