@@ -1,0 +1,14 @@
+{
+  "presets": [
+    "es2015",
+    "stage-1"
+  ],
+  plugins: [
+    "syntax-flow",
+    "transform-flow-strip-types",
+    "syntax-export-extensions",
+    "transform-export-extensions",
+    "add-module-exports",
+    "transform-runtime"
+  ]
+}
