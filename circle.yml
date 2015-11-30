@@ -2,6 +2,11 @@ machine:
   node:
     version: 4.0.0
 
+dependencies:
+  override:
+    - npm install -g npm@3.5.0
+    - npm install
+
 test:
   override:
     - npm run lint
