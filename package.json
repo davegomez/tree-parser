@@ -1,0 +1,48 @@
+{
+  "name": "tree-parser",
+  "version": "0.1.0",
+  "description": "A small directory tree parser",
+  "main": "bin/index.js",
+  "scripts": {
+    "compile": "babel src --out-dir build",
+    "lint": "eslint src/**/*.js",
+    "prepublish": "npm run-script lint && npm run-script test && npm run-script compile",
+    "test": "babel-tape-runner tests/**/*.js | node_modules/.bin/tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/davegomez/tree-parser.git"
+  },
+  "keywords": [
+    "json",
+    "file",
+    "tree",
+    "path",
+    "directory",
+    "list"
+  ],
+  "author": "David Gómez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davegomez/tree-parser/issues"
+  },
+  "homepage": "https://github.com/davegomez/tree-parser#readme",
+  "devDependencies": {
+    "babel-core": "^6.2.1",
+    "babel-eslint": "^5.0.0-beta3",
+    "babel-plugin-add-module-exports": "^0.1.1",
+    "babel-plugin-syntax-export-extensions": "^6.1.18",
+    "babel-plugin-syntax-flow": "^6.1.18",
+    "babel-plugin-transform-export-extensions": "^6.1.18",
+    "babel-plugin-transform-flow-strip-types": "^6.1.18",
+    "babel-plugin-transform-runtime": "^6.1.18",
+    "babel-polyfill": "^6.2.0",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-stage-1": "^6.1.18",
+    "babel-tape-runner": "^1.3.0",
+    "eslint": "^1.10.2",
+    "mock-fs": "^3.5.0",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.2.2"
+  }
+}
