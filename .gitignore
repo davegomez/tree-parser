@@ -1,6 +1,5 @@
 ### Project Related ###
 build/
-.npmignore
 
 ### OSX ###
 .DS_Store
