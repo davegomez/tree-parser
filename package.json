@@ -6,7 +6,7 @@
   "scripts": {
     "compile": "babel src --out-dir build",
     "lint": "eslint src/**/*.js",
-    "prepublish": "npm run-script lint && npm run-script test && npm run-script compile",
+    "prepublish": "npm run lint && npm run test && npm run compile",
     "test": "babel-tape-runner tests/**/*.js | node_modules/.bin/tap-spec"
   },
   "repository": {
