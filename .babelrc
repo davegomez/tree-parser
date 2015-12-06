@@ -8,7 +8,6 @@
     "transform-flow-strip-types",
     "syntax-export-extensions",
     "transform-export-extensions",
-    "add-module-exports",
-    "transform-runtime"
+    "add-module-exports"
   ]
 }
