@@ -6,6 +6,15 @@ import path from 'path';
 import dirContent from './dir-content';
 import parseJSON from './parse-json';
 
+/**
+ * Takes a directory path and optional names for internal JSON files to include
+ * them inside the returned object
+ * @param {string} rootPath Absolute or relative path for a directory to parsed
+ * @param {Object} filesToParse Comma separated list of JSON file names to be
+ * included in the resulting object
+ * @returns {Object} A JavaScript object representing a directory tree and its
+ * content
+ */
 const parseTree = (rootPath: string, ...filesToParse: Array<string>) => {
   const dirStructure: Object = {};
   dirStructure._contents = [];
