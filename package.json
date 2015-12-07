@@ -1,6 +1,6 @@
 {
   "name": "tree-parser",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "A small directory tree parser",
   "main": "build/index.js",
   "scripts": {
