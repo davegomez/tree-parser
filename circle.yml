@@ -5,8 +5,8 @@ machine:
 dependencies:
   override:
     - npm -g upgrade
-    - npm -g install babel-cli babel-tape-runner
-    - npm install babel-core babel-tape-runner
+    - npm -g install babel-cli babel-tape-runner eslint
+    - npm install
 
 test:
   override:
