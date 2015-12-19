@@ -1,10 +1,10 @@
 /* @flow */
 
-import 'babel-polyfill';
 import fs from 'fs';
 import path from 'path';
 import dirContent from './dir-content';
 import parseJSON from './parse-json';
+import includes from '../helpers/includes';
 
 /**
  * Takes a directory path and optional names for internal JSON files to include
@@ -28,7 +28,7 @@ const parseTree = (rootPath: string, ...filesToParse: Array<string>) => {
       if (target.isDirectory()) {
         dirStructure[fileName] = parseTree(filePath, ...filesToParse);
       } else {
-        if (filesToParse.includes(rawFileName)) {
+        if (includes(filesToParse, rawFileName)) {
           dirStructure[rawFileName] = parseJSON(filePath);
         } else {
           dirStructure._contents.push(fileName);

@@ -1,6 +1,7 @@
 import test from 'tape';
 import mock from 'mock-fs';
 import parser from '../src/index';
+import includes from '../helpers/includes';
 
 test('Should return an Object with a directory structure', t => {
   mock({
@@ -26,10 +27,10 @@ test('Should return an Object with a directory structure', t => {
   t.ok(dir._contents, 'dir._contents exist');
   t.notOk(dir.foo, 'dir.foo doesn\'t exist');
   t.equal(dir._contents.length, 4, 'dir._contents has four elements');
-  t.equal(dir._contents.includes('foo.html'), true, 'dir._contents includes "foo.html"');
+  t.equal(includes(dir._contents, 'foo.html'), true, 'dir._contents includes "foo.html"');
   t.ok(dir.bar._contents, 'dir.bar._contents exist');
   t.equal(dir.bar._contents.length, 3, 'dir.bar._contents has three elements');
-  t.equal(dir.bar._contents.includes('foo.txt'), true, 'dir.bar._contents includes "foo.txt"');
+  t.equal(includes(dir.bar._contents, 'foo.txt'), true, 'dir.bar._contents includes "foo.txt"');
   t.ok(dir.bar.newBar, 'dir.bar.newBar exist');
   t.ok(dir.bar.newBar._contents, 'dir.bar.newBar._contents exist');
   t.equal(dir.bar.newBar._contents.length, 0, 'dir.bar.newBar._contents has zero elements');

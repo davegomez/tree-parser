@@ -1,7 +1,7 @@
-import 'babel-polyfill';
 import test from 'tape';
 import mock from 'mock-fs';
 import dirContent from '../src/dir-content';
+import includes from '../helpers/includes';
 
 test('Should return an Array with a directory contents', t => {
   mock({
@@ -19,10 +19,10 @@ test('Should return an Array with a directory contents', t => {
   t.equal(typeof content, 'object', 'is of type object');
   t.equal(Array.isArray(content), true, 'is an Array');
   t.equal(content.length, 3, 'has three elements');
-  t.equal(content.includes('foo/bar/foo.txt'), true, 'includes "foo/bar/foo.txt"');
-  t.equal(content.includes('foo/bar/bar'), true, 'includes "foo/bar/bar"');
-  t.equal(content.includes('foo/bar/baz.png'), true, 'includes "foo/bar/baz.png"');
-  t.equal(content.includes('foo/bar/foo.md'), false, 'doesn\'t includes "foo/bar/foo.md"');
+  t.equal(includes(content, 'foo/bar/foo.txt'), true, 'includes "foo/bar/foo.txt"');
+  t.equal(includes(content, 'foo/bar/bar'), true, 'includes "foo/bar/bar"');
+  t.equal(includes(content, 'foo/bar/baz.png'), true, 'includes "foo/bar/baz.png"');
+  t.equal(includes(content, 'foo/bar/foo.md'), false, 'doesn\'t includes "foo/bar/foo.md"');
   t.end();
 
   mock.restore();

@@ -2,6 +2,7 @@ import test from 'tape';
 import mock from 'mock-fs';
 import parseJSON from '../src/parse-json';
 
+
 test('Should return an Object from a JSON file', t => {
   mock({
     'foo/bar.json': '{ "name": "David", "lastName": "Gómez" }'
