@@ -4,7 +4,7 @@ import fs from 'fs';
 import path from 'path';
 import dirContent from './dir-content';
 import parseJSON from './parse-json';
-import includes from '../helpers/includes';
+import includes from './helpers/includes';
 
 /**
  * Takes a directory path and optional names for internal JSON files to include

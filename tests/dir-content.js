@@ -1,7 +1,7 @@
 import test from 'tape';
 import mock from 'mock-fs';
 import dirContent from '../src/dir-content';
-import includes from '../helpers/includes';
+import includes from '../src/helpers/includes';
 
 test('Should return an Array with a directory contents', t => {
   mock({

@@ -1,7 +1,7 @@
 import test from 'tape';
 import mock from 'mock-fs';
 import parser from '../src/index';
-import includes from '../helpers/includes';
+import includes from '../src/helpers/includes';
 
 test('Should return an Object with a directory structure', t => {
   mock({
