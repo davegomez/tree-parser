@@ -1,11 +1,13 @@
 language: node_js
 node_js:
   - "4.2.1"
+  - "4.3.1"
   - "5.1.0"
+  - "5.6.0"
   - "iojs"
 before_install:
-  - npm -g upgrade
-  - npm -g install babel-cli
+  - npm i -g npm@latest
+  - npm -g install babel-cli babel-tape-runner eslint
 script:
   - npm run-script lint
   - npm run-script test
